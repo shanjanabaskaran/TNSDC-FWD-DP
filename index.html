@@ -1,273 +1,105 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Untitled</title>
-  
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!doctype html>
-
 <html lang="en">
-
 <head>
-
-  <meta charset="utf-8" />
-
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>Entrepreneur Portfolio — SHANJANA</title>
-
-  <style>
-
-    :root{
-
-      --orange-100:#FFEFE0;
-
-      --orange-200:#FFD9B5;
-
-      --orange-300:#FFC485;
-
-      --orange-400:#FFA654;
-
-      --orange-500:#FF8A2A;
-
-      --orange-600:#F3701D;
-
-      --orange-700:#D65D13;
-
-      --orange-800:#B74B0D;
-
-      --orange-900:#8F3607;
-
-      --surface:#FFF9F4;
-
-    }
-
-    *{box-sizing:border-box;margin:0;padding:0}
-
-    body{font-family:sans-serif;background:var(--orange-100);color:var(--orange-900);line-height:1.6}
-
-    header,footer{background:var(--orange-200);padding:1rem;text-align:center}
-
-    header h1{margin-bottom:.5rem}
-
-    nav a{margin:0 .5rem;color:var(--orange-900);text-decoration:none;font-weight:bold;transition:color .3s}
-
-    nav a:hover{color:var(--orange-600)}
-
-    .container{width:min(1100px,90vw);margin:auto;padding:2rem 0}
-
-    h2{color:var(--orange-800);margin-bottom:1rem;text-align:center}
-
-    /* Profile Section */
-
-    .profile{display:flex;flex-direction:column;align-items:center;text-align:center;gap:1rem;margin-bottom:2rem}
-
-    .profile img{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid var(--orange-400);box-shadow:0 4px 12px rgba(0,0,0,.2);transition:transform .3s}
-
-    .profile img:hover{transform:scale(1.05)}
-
-    /* Grid Sections */
-
-    .projects,.achievements{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
-
-    .card{background:var(--surface);border:1px solid var(--orange-300);border-radius:1rem;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,.08);transition:transform .2s}
-
-    .card:hover{transform:translateY(-4px)}
-
-    .card img{width:100%;height:180px;object-fit:cover;display:block}
-
-    .card .body{padding:1rem}
-
-    .tag{display:inline-block;background:var(--orange-300);padding:.2rem .6rem;border-radius:1rem;font-size:.8rem;font-weight:bold;color:var(--orange-900)}
-
-    /* Contact */
-
-    #contact{text-align:center}
-
-    footer{margin-top:2rem}
-
-    /* Animations */
-
-    section{animation:fadeInUp .8s ease both}
-
-    @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-
-  </style>
-
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
   <header>
-
     <h1>Entrepreneur Portfolio</h1>
-
     <nav>
-
       <a href="#about">About</a>
-
       <a href="#projects">Projects</a>
-
       <a href="#achievements">Achievements</a>
-
       <a href="#contact">Contact</a>
-
     </nav>
-
   </header>
 
   <main class="container">
-
+    <!-- About Section -->
     <section id="about" class="profile">
-
-      <img src="Profile Photo.jpeg" alt="Profile Photo">
-
+      <img src="Profile Photo.jpeg" alt="Profile Photo" />
       <div>
-
         <h2>About Me</h2>
-
         <p><strong>Name:</strong> SHANJANA B.P</p>
-
         <p><strong>Mobile:</strong> +91 8870662859</p>
-
         <p><strong>Qualification:</strong> MBA, Entrepreneurship</p>
-
         <p><strong>Email:</strong> shanjanabaskaran15@gmail.com</p>
-
         <p><strong>Location:</strong> Tamilnadu, India</p>
-
       </div>
-
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
-
       <h2>Projects</h2>
-
       <div class="projects">
-
         <article class="card">
-
           <img src="Project 1 image.jpeg" alt="Project 1 image" />
-
           <div class="body">
-
             <h3>Mobile App Development</h3>
-
             <p>Created an app that solves a local problem (e.g., bus tracking, grocery delivery).</p>
-
             <span class="tag">Web</span>
-
             <span class="tag">Business</span>
-
           </div>
-
         </article>
 
         <article class="card">
-
           <img src="Project 2 image.jpeg" alt="Project 2 image" />
-
           <div class="body">
-
             <h3>E-Commerce store</h3>
-
             <p>Sold niche products (handmade crafts, organic food, or local goods).</p>
-
             <span class="tag">App</span>
-
           </div>
-
         </article>
 
         <article class="card">
-
           <img src="Project 3 image.jpeg" alt="Project 3 image" />
-
           <div class="body">
-
             <h3>Freelancing Platform</h3>
-
             <p>Connected freelancers with clients in specific fields.</p>
-
             <span class="tag">Web</span>
-
           </div>
-
         </article>
-
       </div>
-
     </section>
 
+    <!-- Achievements Section -->
     <section id="achievements">
-
       <h2>Achievements</h2>
-
       <div class="achievements">
-
         <article class="card">
-
           <img src="Achievement 1 image.jpeg" alt="Achievement 1 image" />
-
           <div class="body">
-
             <h3>Bureau Of Indian Standards</h3>
-
             <p>Recognized by BIS for outstanding performance in 2022.</p>
-
           </div>
-
         </article>
 
         <article class="card">
-
           <img src="Achievement 2 image.jpeg" alt="Achievement 2 image" />
-
           <div class="body">
-
             <h3>Entrepreneur of the Year</h3>
-
             <p>Awarded for leadership and impact in the tech sector by BIS Foundation.</p>
-
           </div>
-
         </article>
-
-    <section id="contact">
-
-      <h2>Contact</h2>
-
-      <p>Feel free to reach out for collaborations or inquiries.</p>
-
-      <p><strong>Email:</strong> shanjanabaskaran15@gmail.com </p>
-
-      <p><strong>Phone:</strong> +91 8870662859</p>
-
+      </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for collaborations or inquiries.</p>
+      <p><strong>Email:</strong> shanjanabaskaran15@gmail.com</p>
+      <p><strong>Phone:</strong> +91 8870662859</p>
+    </section>
   </main>
 
   <footer>
-
     <p>© <span id="year"></span> Shanjana. All rights reserved.</p>
-
   </footer>
 
-  <script>
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-  </script>
-
-</body>
-
-</html>
-<!-- partial -->
-  
+  <script src="script.js"></script>
 </body>
 </html>
